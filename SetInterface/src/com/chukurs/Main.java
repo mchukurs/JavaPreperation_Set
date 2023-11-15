@@ -6,9 +6,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Contact> emails = ContactData.getData("email");
-        printData("emails", emails);
-        List<Contact> phone = ContactData.getData("phone");
-        printData("phone", emails);
+        printData("email data", emails);
+        List<Contact> phones = ContactData.getData("phone");
+        printData("phone data", phones);
     }
     public static void printData(String header, Collection<Contact> contacts){
         System.out.println("-".repeat(10));
